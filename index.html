@@ -159,51 +159,29 @@
     </section><!-- End Skills Section -->
 
     <section id="email" class="email">
+      <!--create email submit-->
       <div class="container" data-aos="fade-up">
-
         <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/email.png" class="img-fluid" alt="">
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <form action="https://formspree.io/xqjqxqjq" method="POST">
+              <div class="form-group">
+                <label for="name" class="text-muted mb-1">Adınız</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Adınız">
+              </div>
+              <div class="form-group">
+                <label for="email" class="text-muted mb-1">E-Posta Adresiniz</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="E-Posta Adresiniz">
+              </div>
+              <div class="form-group">
+                <label for="message" class="text-muted mb-1">Mesajınız</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Gönder</button>
+              </div>
+            </form>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>E-Posta Adresimiz</h3>
-            <p class="fst-italic">
-            </p>
 
-            <div class="email-content">
-              <p>
-                <i class="fa fa-envelope"></i>
-                <a href="mailto:
-                <?php
-                  echo $mail;
-                ?>
-                ">
-                <?php
-                  echo $mail;
-                ?>
-                </a>
-              </p>
-              <p>
-                <i class="fa fa-phone"></i>
-                <a href="tel:
-                <?php
-                  echo $phone;
-                ?>
-                ">
-                <?php
-                  echo $phone;
-                ?>
-                </a>
-              </p>
-              <p>
-                <i class="fa fa-map-marker"></i>
-                <a href="https://www.google.com/maps/place/<?php echo $address; ?>" target="_blank">
-                <?php
-                  echo $address;
-                ?>
-                </a>
-              </p>
-            </div>
     </section>
 
     
