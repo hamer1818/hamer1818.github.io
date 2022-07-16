@@ -1,0 +1,24 @@
+{
+  "name": "hamer1818.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamer1818/hamer1818.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamer1818/hamer1818.github.io/issues"
+  },
+  "homepage": "https://github.com/hamer1818/hamer1818.github.io#readme",
+  "dependencies": {
+    "mssql": "^8.1.2",
+    "mysql": "^2.18.1"
+  }
+}
