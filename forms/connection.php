@@ -1,11 +1,14 @@
-<!--create database connection with mssql-->
+<!--create database connection with mysql-->
 <?php
-$server = "localhost";
-$user = "root";
-$pass = "";
-$database = "email";
-$connection = mssql_connect($server, $user, $pass) or die("SQL server'a bağlanılmıyor $server");
-mssql_select_db($database, $connection) or die("Veritabanı açılmadı $database");
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+if(! $conn )
+{
+  die('Could not connect: ' . mysql_error());
+}
+echo 'Connected successfully';
+mysql_close($conn);
 ?>
-
 
